@@ -21,6 +21,7 @@ export class RedirectComponent {
       this.linksService.redirectLink(identifier).subscribe({
         next: (response: any) => {
           console.log('Response:', response);
+          window.location.href = response.url;
         },
         error: (error: any) => {
           console.error('Error:', error);

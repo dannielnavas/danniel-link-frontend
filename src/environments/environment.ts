@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  endpoint: 'https://danniel-link.vercel.app/',
+  endpoint: 'http://localhost:3000/',
 };
