@@ -1,1 +1,46 @@
-<p>links works!</p>
+<div className="container mx-auto p-6 bg-gray-100"></div>
+  <h2 className="text-3xl font-bold mb-6 text-gray-800">Employee Directory</h2>
+
+  <div className="hidden md:grid grid-cols-4 gap-4 mb-4 font-bold text-gray-700 bg-white p-4 rounded-t-lg shadow">
+    <!-- {(['name', 'position', 'department', 'email'] as const).map((field) => (
+    <div key={field} className="flex items-center cursor-pointer" onClick={()=> handleSort(field)}
+      >
+      {field.charAt(0).toUpperCase() + field.slice(1)}
+      {sortField === field && (
+      sortDirection === 'asc' ?
+      <ChevronUpIcon className="w-4 h-4 ml-1" /> :
+      <ChevronDownIcon className="w-4 h-4 ml-1" />
+      )}
+    </div>
+    ))} -->
+  </div>
+
+  <div className="space-y-4">
+    <!-- {sortedEmployees.map((employee) => (
+    <div key={employee.id} className="bg-white rounded-lg shadow overflow-hidden">
+      <div className="p-4 cursor-pointer flex justify-between items-center" onClick={()=> toggleExpand(employee.id)}
+        >
+        <div className="font-bold text-gray-900">{employee.name}</div>
+        <ChevronDownIcon className={`w-5 h-5 text-gray-500 transform transition-transform ${expandedCard===employee.id
+          ? 'rotate-180' : '' }`} />
+      </div>
+      <div className={`px-4 pb-4 ${expandedCard===employee.id ? 'block' : 'hidden' }`}>
+        <div className="grid md:grid-cols-3 gap-4">
+          <div>
+            <div className="font-semibold text-gray-700">Position</div>
+            <div className="text-gray-900">{employee.position}</div>
+          </div>
+          <div>
+            <div className="font-semibold text-gray-700">Department</div>
+            <div className="text-gray-900">{employee.department}</div>
+          </div>
+          <div>
+            <div className="font-semibold text-gray-700">Email</div>
+            <div className="text-gray-900">{employee.email}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ))} -->
+  </div>
+<!-- </div> -->
