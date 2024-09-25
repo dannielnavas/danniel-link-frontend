@@ -8,7 +8,7 @@ import { HeaderComponent } from '@domain/shared/components/header/header.compone
   imports: [RouterOutlet, HeaderComponent],
   template: `
     <app-header />
-    <section class="container ml-auto mr-auto">
+    <section class="container mx-auto">
       <router-outlet />
     </section>
   `,

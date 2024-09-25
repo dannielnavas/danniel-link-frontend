@@ -17,7 +17,7 @@ import { LinksService } from '../../../shared/services/links.service';
 export class FormComponent {
   formLink!: FormGroup;
 
-  private formBuilder!: FormBuilder;
+  private formBuilder = inject(FormBuilder);
   private linksService = inject(LinksService);
 
   ngOnInit() {
@@ -32,7 +32,8 @@ export class FormComponent {
     });
   }
 
-  onSubmit() {
+  onSubmit(event: Event) {
+    event.preventDefault();
     if (this.formLink.invalid) {
       this.formLink.reset();
       return;

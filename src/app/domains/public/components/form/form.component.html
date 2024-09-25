@@ -1,6 +1,6 @@
-<div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+<div class="bg-white p-8 rounded-lg shadow-md w-full mb-4">
   <h1 class="text-2xl font-bold mb-6 text-center text-gray-800">Formulario de Configuración</h1>
-  <form action="#" method="post">
+  <form [formGroup]="formLink" novalidate (ngSubmit)="onSubmit($event)" class="flex flex-row gap-4">
     <div class="mb-4">
       <label for="url" class="block text-gray-700 text-sm font-bold mb-2">URL:</label>
       <input type="text" id="url" name="url" formControlName="url" required

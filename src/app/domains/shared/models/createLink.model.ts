@@ -1,5 +1,9 @@
 export interface CreateLinkDto {
-  key: string;
+  _id?: string;
   url: string;
   identifier: string;
+  click?: number;
+  createdAt?: string;
+  __v?: number;
+  key?: string;
 }

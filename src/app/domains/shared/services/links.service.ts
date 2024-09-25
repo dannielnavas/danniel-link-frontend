@@ -10,7 +10,7 @@ export class LinksService {
   private http = inject(HttpClient);
 
   getLinks() {
-    return this.http.get(environment.endpoint);
+    return this.http.get<CreateLinkDto[]>(environment.endpoint);
   }
 
   createLink(createLink: CreateLinkDto) {
